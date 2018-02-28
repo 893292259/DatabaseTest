@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         helper = new MyDatabaseHelper(this,"BookStore.db",null,2);
+        
         Button createdb = findViewById(R.id.add_data);
         createdb.setOnClickListener(v->{
             SQLiteDatabase db = helper.getWritableDatabase();
